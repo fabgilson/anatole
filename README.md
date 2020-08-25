@@ -1,6 +1,6 @@
 # Hugo Anatole Fork
 
-This is a fork of Anatole's minimalist two-column [hugo](https://gohugo.io/) theme, itself based on farbox-theme-Anatole.
+This is a fork of [Anatole](https://github.com/lxndrblz/anatole)'s minimalist two-column [hugo](https://gohugo.io/) theme, itself based on farbox-theme-Anatole.
 
 ![Screenshot orginal Anatole Theme](https://raw.githubusercontent.com/lxndrblz/anatole/master/images/screenshot.png)
 ![Screenshot origianl Anatole Theme (dark)](https://raw.githubusercontent.com/lxndrblz/anatole/master/images/screenshot_dark.png)
@@ -282,6 +282,6 @@ This theme is maintained by its author [Fabian Gilson](https://github.com/fabgil
 
 ## Special Thanks 🎁
 
-* Go to [lxndrblz](https://github.com/lxndrblz/anatole)
+* Go to [lxndrblz](https://github.com/lxndrblz/anatole), for the original version of this theme. 
 * Go to [Cai Cai](https://github.com/hi-caicai), for the great Anatole Farbox theme that formed the foundation for this theme.
 * Go to [Kareya Saleh](https://unsplash.com/photos/tLKOj6cNwe0) for providing the profile picture in the exampleSite.
