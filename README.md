@@ -1,12 +1,12 @@
-# Anatole ![](https://img.shields.io/badge/license-MIT-blue.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/ee7a5df4-b944-4e03-853d-39219c96d484/deploy-status)](https://alexbilz.com/)
+# Hugo Anatole Fork
 
-Anatole is a beautiful minimalist two-column [hugo](https://gohugo.io/) theme based on farbox-theme-Anatole.
+This is a fork of Anatole's minimalist two-column [hugo](https://gohugo.io/) theme, itself based on farbox-theme-Anatole.
 
-![Screenshot Anatole Theme](https://raw.githubusercontent.com/lxndrblz/anatole/master/images/screenshot.png)
-![Screenshot Anatole Theme (dark)](https://raw.githubusercontent.com/lxndrblz/anatole/master/images/screenshot_dark.png)
+![Screenshot orginal Anatole Theme](https://raw.githubusercontent.com/lxndrblz/anatole/master/images/screenshot.png)
+![Screenshot origianl Anatole Theme (dark)](https://raw.githubusercontent.com/lxndrblz/anatole/master/images/screenshot_dark.png)
 
 ## Features
-Anatole's aims to be minimalistic and sleek, but still brings some great functionality.
+This fork keeps all of Anatole's aims to be minimalistic and sleek, but still brings some great functionality.
 
 ### Features include:
 
@@ -31,24 +31,24 @@ Anatole's aims to be minimalistic and sleek, but still brings some great functio
 
 ## Preview the exampleSite
 ```
-git clone https://github.com/lxndrblz/anatole.git anatole
-cd anatole/exampleSite
+git clone https://github.com/fabgilson/hugo-anatole-fork.git your-clone-repo
+cd your-clone-repo/exampleSite
 hugo server --themesDir ../..
 ```
 
 ## Quick Start
-1. Add the repository into your Hugo Project repository as a submodule: `git submodule add https://github.com/lxndrblz/anatole.git themes/anatole`.
+1. Add the repository into your Hugo Project repository as a submodule: `git submodule add https://github.com/fabgilson/hugo-anatole-fork.git themes/hugo-anatole-fork`.
 2. Configure your `config.toml`. Feel free to copy the demo `config.toml` and some content from the exampleSite. 
 3. Build your site with `hugo serve` and admire the result at `http://localhost:1313/`.
 
 ## Update your installation
-If you want to get the latest update of the `Anatole` theme please execute this command:
+If you want to get the latest update of the `Hugo Anatole Fork` theme please execute this command:
 ```
 git submodule update --remote --merge
 ```
 
 ## Modifying the config.toml
-Ìn this section I'll discuss the custom parameters available within the `config.toml`. The complete [sample](https://github.com/lxndrblz/anatole/blob/master/exampleSite/config.toml) can be found in the exampleSite folder. 
+Ìn this section I'll discuss the custom parameters available within the `config.toml`. The complete [sample](https://github.com/fabgilson/hugo-anatole-fork/blob/master/exampleSite/config.toml) can be found in the exampleSite folder. 
 
 ### Profile picture and slogan
 ```toml
@@ -137,10 +137,7 @@ weight = 300
 identifier = "about"
 url = "/de/about/"
 ```
-Anatole currently ships with support for some basic languages. Contributions for other language translations are welcome.
-### :100: Google Lighthouse score
-The theme is optimized to adhere to the requirements checked for in the Lighthouse Audit. On my [personal site](https://www.alexbilz.com) I was able to reach a perfect 100⁄100 score.
-![Google Lighthouse Score](https://raw.githubusercontent.com/lxndrblz/anatole/master/images/lighthouse.png)
+Anatole's original version currently ships with support for some basic languages. Contributions for other language translations are welcome.
 
 ### Comments powered by Disqus
 No comment section is shown on the `single.html`, unless a disqus code is specified in the `config.toml` file.
@@ -174,7 +171,6 @@ To define a custom image of a page, you might want to add the following to the f
 images = ["post-cover.png"]
 ```
 
-
 ### Custom CSS
 You can add your custom CSS files with the `customCss` parameter of the configuration file. Put your files into the `assets/css` directory.
 
@@ -189,6 +185,8 @@ On the user-side it will look like this:
         ├── custom.css
         └── styles.css
 ```
+
+
 ### Custom JavaScript
 You can add your custom JS files with the `customJs` parameter of the configuration file. Put your files into the `assets/js` directory.
 ```toml
@@ -276,15 +274,14 @@ customCss = ["css/syntax.css"]
 
 ## License
 
-Anatole is licensed under the [MIT license](https://github.com/lxndrblz/anatole/blob/master/LICENSE).
+Hugo Anatole Fork is licensed under the [LGPL3 license](https://github.com/fabgilson/hugo-anatole-fork/blob/master/LICENSE).
 
 ## Maintenance
 
-This theme is maintained by its author [Alexander Bilz](https://github.com/lxndrblz). Please open an issue/pull request if you want to contribute in making this theme better and more feature-complete.
+This theme is maintained by its author [Fabian Gilson](https://github.com/fabgilson) and rely on original features from Alexander Bilz's [Anatole](https://github.com/lxndrblz/anatole). Please open an issue/pull request if you want to contribute in making this theme better and more feature-complete.
 
 ## Special Thanks 🎁
 
+* Go to [lxndrblz](https://github.com/lxndrblz/anatole)
 * Go to [Cai Cai](https://github.com/hi-caicai), for the great Anatole Farbox theme that formed the foundation for this theme.
 * Go to [Kareya Saleh](https://unsplash.com/photos/tLKOj6cNwe0) for providing the profile picture in the exampleSite.
-
-
