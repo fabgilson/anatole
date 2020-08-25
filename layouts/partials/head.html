@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous"
       type="text/css">
   {{- end -}}
+  {{- $js := "" -}}
+  {{- range .Site.Params.customJs -}}
+    {{ $js := resources.Get . | fingerprint }}
+    <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  {{- end -}}
   <!-- Favicons -->
   <link rel="shortcut icon" href="{{ .Site.Params.favicon | absURL }}favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.favicon | absURL }}favicon-32x32.png">

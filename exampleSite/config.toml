@@ -21,7 +21,7 @@ profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
 customCss = ["css/style.css"]
-customJs = []
+customJs = ["js/all.js"]
 mainSections = ["post"]
 images = ["images/site-feature-image.png"]
 
