@@ -12,6 +12,8 @@
   --tag-color: #424242;
   --blockquote-text-color: #858585;
   --blockquote-border-color: #dfe2e5;
+  --title-font: "Josefin Sans";
+  --body-font: "Istok Web";
   scroll-padding-top: 100px;
 }
 
@@ -21,7 +23,7 @@ html[data-theme='dark'] {
   --heading-color: rgb(169, 169, 179);
   --body-color: rgb(169, 169, 179);
   --post-color: rgba(0, 0, 0, 0.44);
-  --border-color: rgb(38, 38, 38);
+  --border-color: rgb(69, 69, 69);
   --pre-bg-color: rgb(33, 33, 45);
   --nav-text-color: rgb(191, 191, 191);
   --tag-color: rgb(191, 191, 191);
@@ -36,17 +38,26 @@ html {
 
 body {
   color: var(--body-color);
-  font-family: 'Verdana', sans-serif;
+  font-family: var(--body-font);
   font-size: 18px;
   width: 100%;
   margin: 0 auto 30px auto;
   background-color: var(--bg-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
 p {
-  line-height: 1.9em;
+  line-height: 1.5em;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a {
@@ -92,15 +103,14 @@ pre {
   margin-right: 5px;
 }
 
-a:link,
-a:visited {
-  opacity: 1;
-  color: var(--tag-color);
+a {
+  color: #ED6243;
 }
 
 a:hover,
 a:active {
-  color: #e05413;
+  color: #BD4226;
+  text-decoration: underline;
 }
 
 /*basic styles ends*/
@@ -127,25 +137,25 @@ a:active {
 .content {
   height: auto;
   float: right;
-  width: 60%;
+  width: 70%;
   margin-top: 60px;
 }
 
 .page-top {
-  width: 60%;
+  width: 70%;
   position: fixed;
   right: 0;
   z-index: 3;
   background-color: var(--bg-color);
-  height: 60px;
+  height: 47px;
   border-bottom: 1px solid var(--border-color);
 }
 
 .page-top .nav {
   list-style: none;
-  padding: 11px 30px;
+  padding: 0px 20px;
   float: left;
-  font-size: 12px;
+  font-size: 14px;
   display: block;
   width: calc(100% - 30px);
 }
@@ -156,24 +166,29 @@ a:active {
   padding-right: 20px;
 }
 
+.nav .fa {
+  font-size: 15px;
+}
+
 .page-top .nav a {
   color: var(--nav-text-color);
 }
 
 .page-top .nav a:hover {
   color: #2660ab;
+  text-decoration: none!important;
 }
 
 .page-top .nav a.current {
   color: var(--nav-text-color);
-  padding-bottom: 22px;
+  padding-bottom: 13px;
   border-bottom: 1px solid var(--nav-text-color);
 }
 
 .theme-switch-item {
   float: right;
-  font-size: 2em;
-  margin-top: -5px;
+  font-size: 1.5em;
+  margin-top: -10px;
 }
 
 .page-top .information {
@@ -204,7 +219,7 @@ a:active {
 }
 
 .sidebar {
-  width: 40%;
+  width: 30%;
   -webkit-background-size: cover;
   background-size: cover;
   background-color: var(--bg-color);
@@ -222,7 +237,7 @@ a:active {
 }
 
 .sidebar .logo-title .description {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .sidebar .logo-title .logo {
@@ -235,7 +250,6 @@ a:active {
 }
 
 .sidebar .logo-title .title h3 {
-  text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -272,12 +286,16 @@ a:active {
 }
 
 .sidebar .social-links a:hover {
-  color: #2660ab;
+  color: #BD4226;
+}
+
+.sidebar p {
+  font-family: var(--title-font);
 }
 
 .post {
   background-color: var(--bg-color);
-  margin: 30px;
+  margin: 25px;
 }
 
 .post .post-title h1 {
@@ -313,19 +331,19 @@ a:active {
   color: var(--heading-color);
 }
 
-.post .post-title a:hover {
+/* .post .post-title a:hover {
   text-decoration: underline;
-}
+} */
 
-.post .post-content a {
+/* .post .post-content a {
   text-decoration: none;
   letter-spacing: 1px;
   color: #2660ab;
-}
+} */
 
-.post .post-content a:hover {
+/* .post .post-content a:hover {
   color: #2F69B3;
-}
+} */
 
 .post .post-content h3 {
   font-size: 22px;
@@ -346,6 +364,10 @@ a:active {
   border-bottom: 1px solid var(--border-color);
 }
 
+.meta {
+  font-family: var(--title-font);
+}
+
 .post .post-footer .meta {
   max-width: 100%;
   display: flex;
@@ -354,7 +376,7 @@ a:active {
 
 .post .post-footer .meta .info {
   float: left;
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 1em;
   color: var(--body-color);
 }
@@ -372,13 +394,9 @@ a:active {
 }
 
 .post .post-footer .meta a {
-  text-decoration: none;
-  color: var(--body-color);
+  text-decoration: none; 
   padding-right: 10px;
-}
-
-.post .post-footer .meta a:hover {
-  color: #2660ab;
+  font-family: var(--title-font);
 }
 
 .post .post-footer .meta i {
@@ -406,12 +424,8 @@ a:active {
 
 .post .post-footer .tags a {
   text-decoration: none;
-  color: var(--post-color);
+  font: "Raleway";
   font-weight: 400;
-}
-
-.post .post-footer .tags a:hover {
-  text-decoration: none;
 }
 
 .pagination {
@@ -474,7 +488,8 @@ a:active {
 .footer {
   clear: both;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
+  font-family: var(--title-font);
   margin: 0 auto;
   bottom: 0;
   position: absolute;
@@ -483,7 +498,7 @@ a:active {
 }
 
 .footer a {
-  color: #A6A6A6;
+  color: #161616;
 }
 
 .footer a:hover {
@@ -496,7 +511,7 @@ a:active {
 }
 
 .list-with-title {
-  font-size: 14px;
+  font-size: 20px;
   margin: 30px;
   padding: 0;
 }
@@ -518,20 +533,12 @@ a:active {
 }
 
 .list-with-title .listing .listing-post {
-  padding-bottom: 5px;
+  padding: 10px;
 }
 
 .list-with-title .listing .listing-post .post-time {
   float: right;
   color: #C5C5C5;
-}
-
-.list-with-title .listing .listing-post a {
-  color: #8F8F8F;
-}
-
-.list-with-title .listing .listing-post a:hover {
-  color: #2660ab;
 }
 
 /* share */
@@ -598,21 +605,9 @@ a:active {
   margin: 30px;
 }
 
-.about h3 {
-  font-size: 22px;
-}
-
 /* links*/
 .links {
   margin: 30px;
-}
-
-.links h3 {
-  font-size: 22px;
-}
-
-.links a {
-  cursor: pointer;
 }
 
 /* Comments */
