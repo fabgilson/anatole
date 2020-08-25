@@ -20,7 +20,7 @@ description = "Call me Jane"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
-customCss = []
+customCss = ["css/style.css"]
 customJs = []
 mainSections = ["post"]
 images = ["images/site-feature-image.png"]
@@ -30,10 +30,6 @@ google_fonts = [
   ["Josefin Sans", "400, 700"],
   ["Istok Web", "400, 400i, 700, 700i"]
 ]
-#if SCSS used
-#heading_font = "Raleway"
-#body_font = "Istok Web"
-
 
 ## Math settings
 [params.math]
@@ -42,17 +38,17 @@ use = "katex"  # options: "katex", "mathjax". default is "katex".
 
 ## Social links
 [[params.socialIcons]]
-icon = "fa-linkedin"
+icon = "fab fa-linkedin"
 title = "Linkedin"
 url = "https://de.linkedin.com/"
 
 [[params.socialIcons]]
-icon = "fa-github"
+icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/lxndrblz/anatole/"
 
 [[params.socialIcons]]
-icon = "fa-instagram"
+icon = "fab fa-instagram"
 title = "instagram"
 url = "https://www.instagram.com/"
 
@@ -64,7 +60,6 @@ url = "mailto:mail@alexbilz.com"
 ## Menu items
 
 [menu]
-
   [[menu.main]]
   name = "Home"
   identifier = "home"
