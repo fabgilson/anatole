@@ -137,7 +137,8 @@ a:active {
 .content {
   height: auto;
   float: right;
-  width: 70%;
+  width: 65%;
+  padding-right: 50px;
   margin-top: 60px;
 }
 
